@@ -15,7 +15,7 @@ env:
   IMAGE_REF: docker.itcox.cn/${{ vars.DEPLOY_IMAGE_NAME || 'htlabs' }}:${{ github.sha }}
   LATEST_IMAGE_REF: docker.itcox.cn/${{ vars.DEPLOY_IMAGE_NAME || 'htlabs' }}:latest
   CONTAINER_NAME: ${{ vars.DEPLOY_CONTAINER_NAME || 'htlabs.com.cn' }}
-  PORT_MAPPING: ${{ vars.DEPLOY_PORT_MAPPING || '10200:8080' }}
+  PORT_MAPPING: ${{ vars.DEPLOY_PORT_MAPPING || '14002:8080' }}
 
 jobs:
   deploy:
